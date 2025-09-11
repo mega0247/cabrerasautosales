@@ -88,6 +88,9 @@
     .footer h4 { font-family:'Bitter'; font-weight:400; margin-bottom:8px; font-size:18px; }
     .copyright { text-align:center; color:#777; margin-top:18px; font-size:13px; }
 
+    /* ---- Disable clicks for inactive links ---- */
+    a.disabled-link { pointer-events: none; cursor: default; opacity: 0.85; }
+
     /* ---- Responsive ---- */
     @media (max-width:900px) {
       .hero .inner { grid-template-columns:1fr; }
@@ -111,10 +114,10 @@
 
     <nav class="nav" role="navigation" aria-label="Main menu">
       <a href="#">Home</a>
-      <a href="/inventory/">Inventory</a>
-      <a href="/schedule-a-test-drive/">Test Drive</a>
-      <a href="/contact/">Contact</a>
-      <a class="btn" href="/inventory/">Search Inventory</a>
+      <a href="#" class="disabled-link">Inventory</a>
+      <a href="#" class="disabled-link">Test Drive</a>
+      <a href="#" class="disabled-link">Contact</a>
+      <a class="btn disabled-link" href="#">Search Inventory</a>
     </nav>
   </header>
 
@@ -126,8 +129,8 @@
         <p>We help you find the vehicle you want — with access to auctions and exclusive industry sources. Browse inventory, schedule a test drive, or get pre-approved.</p>
 
         <div class="actions">
-          <a class="btn" href="/inventory/">Browse Inventory</a>
-          <a class="btn secondary" href="/schedule-a-test-drive/">Schedule a Test Drive</a>
+          <a class="btn disabled-link" href="#">Browse Inventory</a>
+          <a class="btn secondary disabled-link" href="#">Schedule a Test Drive</a>
         </div>
       </div>
 
@@ -180,8 +183,8 @@
         </div>
 
         <div style="display:flex; gap:12px; align-items:center;">
-          <a class="btn" href="/get-a-quote/">Get a Quote</a>
-          <a class="btn secondary" href="/payment-estimator/">Payment Estimator</a>
+          <a class="btn disabled-link" href="#">Get a Quote</a>
+          <a class="btn secondary" href="#">Payment Estimator</a>
         </div>
       </div>
     </section>
@@ -227,12 +230,12 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>(786) 957-4763<br>2406 Vulcan Rd<br>Apopka, FL 32703<br>cabrerasauto@consultant.com<br></p>
+        <p>(805) 664 3564<br>2406 Vulcan Rd<br>Apopka, FL 32703<br>cabrerasauto@consultant.com<br></p>
       </div>
 
       <div class="footer-col">
         <h4>Quick Links</h4>
-        <p><a href="/inventory/">Inventory</a><br><a href="/schedule-a-test-drive/">Schedule a Test Drive</a></p>
+        <p><a href="#" class="disabled-link">Inventory</a><br><a href="#" class="disabled-link">Schedule a Test Drive</a></p>
       </div>
 
       <div class="footer-col">
